@@ -5,21 +5,21 @@
 
 <h2>Installation</h2>
 
-First, clone this repo, you can also download the zip\n
-`git clone https://github.com/razor11800/dalle-playground.git`
+First, clone this repo, you can also download the zip<br/>
+`git clone https://github.com/razor11800/dalle-playground.git`<br/>
 
-Optionnal : install CUDA if it's not already done\n
-`sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/3bf863cc.pub
-wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin
-sudo mv cuda-ubuntu2004.pin /etc/apt/preferences.d/cuda-repository-pin-600
-sudo add-apt-repository "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/ /"
-sudo apt-get update
-sudo apt install cuda=11.6.2-1`
+Optionnal : install CUDA if it's not already done <br/>
+`sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/3bf863cc.pub<br/>
+wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin<br/>
+sudo mv cuda-ubuntu2004.pin /etc/apt/preferences.d/cuda-repository-pin-600<br/>
+sudo add-apt-repository "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/ /"<br/>
+sudo apt-get update<br/>
+sudo apt install cuda=11.6.2-1`<br/>
 
-Install ubuntu packages\n
-`sudo apt install python3-pip python3`
+Install ubuntu packages<br/>
+`sudo apt install python3-pip python3`<br/><br/>
 
-Install python packages dependancies\n
-`pip3 install -r requirements.txt
-pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116
+Install python packages dependancies<br/>
+`pip3 install -r requirements.txt<br/>
+pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116<br/>
 pip3 install "jax[cuda]" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
