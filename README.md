@@ -1,5 +1,5 @@
 <p align="center">
-  <h2 align="center">DALL-E Playground</h2>
+  <h2 align="center">DALL-E fast usage</h2>
 </p>
 <h2>prerequisites</h2>
 Ubuntu LTS 20.04<br/>
