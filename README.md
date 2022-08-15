@@ -2,11 +2,15 @@
 <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/woman-artist_1f469-200d-1f3a8.png" width="60" alt="Dali">
   <h2 align="center">DALL-E Playground</h2>
 </p>
+<h2>prerequisites</h2>
+Ubuntu LTS 20.04<br/>
+A good Nvidia GPU with 4GB of VRAM minimum<br/>
 
 <h2>Installation</h2>
 
-First, clone this repo, you can also download the zip<br/>
+First, clone this repo (you can also download the zip) and cd to the folder <br/>
 `git clone https://github.com/razor11800/dalle-playground.git`<br/>
+`cd dalle-playground`<br/>
 
 Optionnal : install CUDA if it's not already done <br/>
 `sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/3bf863cc.pub`<br/>
@@ -17,9 +21,25 @@ Optionnal : install CUDA if it's not already done <br/>
 `sudo apt install cuda=11.6.2-1`<br/>
 
 Install ubuntu packages<br/>
-`sudo apt install python3-pip python3`<br/><br/>
+`sudo apt install python3-pip python3`<br/>
 
 Install python packages dependancies<br/>
 `pip3 install -r requirements.txt`<br/>
 `pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116`<br/>
 `pip3 install "jax[cuda]" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html`
+
+<h2>How to run it</h2>
+
+in the file `app.py`, you can edit 3 parameters line 21 22 23 :
+Replace `<model>` by mini (4GB of VRAM recommended) mega (8GB of VRAM recommended) or mega_full (12GB of VRAM recommended, work on g4dn AWS instances)
+`dalle_model = DalleModel("<model>")` 
+Replace `<prompt text>` by whatever you want to generate
+`text_prompt = "<prompt text>"`
+Replace `<image ammount>`by the amount of images you want to generate
+`num_images = <image ammount>`
+
+Sample parameters:
+
+`dalle_model = DalleModel("mini")` 
+`text_prompt = "An apple fighting a potato"`
+`num_images = 4`
