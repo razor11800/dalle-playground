@@ -8,7 +8,7 @@ A good Nvidia GPU with 4GB of VRAM minimum<br/>
 <h2>Installation</h2>
 
 First, clone this repo (you can also download the zip) and cd to the folder <br/>
-`git clone https://github.com/razor11800/dalle-playground.git`<br/>
+`git clone https://github.com/theholyraptor/dalle-playground.git`<br/>
 `cd dalle-playground`<br/>
 
 Optionnal : install CUDA if it's not already done <br/>
