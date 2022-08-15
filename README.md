@@ -43,4 +43,7 @@ Sample parameters:<br/><br/>
 `text_prompt = "An apple fighting a potato"`<br/>
 `num_images = 4`
 
-after that, simply run `python3 app.py`
+after that, simply run `python3 app.py`<br/>
+You will find your generated images in the folder `generated_imgs`<br/><br/>
+
+That's it !
