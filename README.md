@@ -19,7 +19,7 @@ Optionnal : install CUDA if it's not already done <br/>
 `sudo add-apt-repository "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/ /"`<br/>
 `sudo apt-get update`<br/>
 `sudo apt install cuda=11.6.2-1`<br/>
-
+Restart you workstation <br/><br/>
 Install ubuntu packages<br/>
 `sudo apt install python3-pip python3`<br/>
 
@@ -39,7 +39,8 @@ Replace `<image ammount>`by the amount of images you want to generate<br/>
 `num_images = <image ammount>`<br/><br/>
 
 Sample parameters:<br/><br/>
-
 `dalle_model = DalleModel("mini")` <br/>
 `text_prompt = "An apple fighting a potato"`<br/>
 `num_images = 4`
+
+after that, simply run `python3 app.py`
