@@ -30,16 +30,16 @@ Install python packages dependancies<br/>
 
 <h2>How to run it</h2>
 
-in the file `app.py`, you can edit 3 parameters line 21 22 23 :
-Replace `<model>` by mini (4GB of VRAM recommended) mega (8GB of VRAM recommended) or mega_full (12GB of VRAM recommended, work on g4dn AWS instances)
-`dalle_model = DalleModel("<model>")` 
-Replace `<prompt text>` by whatever you want to generate
-`text_prompt = "<prompt text>"`
-Replace `<image ammount>`by the amount of images you want to generate
-`num_images = <image ammount>`
+in the file `app.py`, you can edit 3 parameters line 21 22 23 :<br/>
+Replace `<model>` by mini (4GB of VRAM recommended) mega (8GB of VRAM recommended) or mega_full (12GB of VRAM recommended, work on g4dn AWS instances)<br/>
+`dalle_model = DalleModel("<model>")` <br/>
+Replace `<prompt text>` by whatever you want to generate<br/>
+`text_prompt = "<prompt text>"`<br/>
+Replace `<image ammount>`by the amount of images you want to generate<br/>
+`num_images = <image ammount>`<br/><br/>
 
-Sample parameters:
+Sample parameters:<br/><br/>
 
-`dalle_model = DalleModel("mini")` 
-`text_prompt = "An apple fighting a potato"`
+`dalle_model = DalleModel("mini")` <br/>
+`text_prompt = "An apple fighting a potato"`<br/>
 `num_images = 4`
